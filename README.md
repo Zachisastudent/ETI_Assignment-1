@@ -30,7 +30,7 @@ Users can retrieve all trips that have taken before in reverse chronological ord
 
 
 ## Architectural Diagram 📐
-![Uploading Architectural_DiagramNEW.png…]()
+![Architectural_DiagramNEW](https://github.com/Zachisastudent/ETI_Assignment-1/assets/92633277/fd38a1b3-9851-4ffa-8f56-87c15376cc51)
 
 
 <!-- GETTING STARTED -->
