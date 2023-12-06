@@ -35,10 +35,17 @@ Users can retrieve all trips that have taken before in reverse chronological ord
 Explaination: This diagram showcases
 <!-- GETTING STARTED -->
 ## Getting Started 
+*Note: You can use whatever way to initalise your repository AS LONG AS you have server and client program each. Naming conventions such as main.go and console.go is up to you. (I named mine as mainsub.go and consolesub.go)
 
+1. Create 2 speperate folders to contain your server program (main.go) and Admin console program (console.go)
+  
+2. Initalise your repository using the cmd prompt:
+```sh
+go mod init main.go/console.go
+```
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
-1. Import the necessary packages in main.go:
+3. Import the necessary packages in main.go:
 * gorilla mux
 ```sh
 go get -u github.com/gorilla/mux
@@ -49,7 +56,7 @@ go get -u github.com/gorilla/mux
 go get -u github.com/go-sql-driver/mysql
 ```
 
-2. Setting up your database:
+3. Setting up your database:
    
 Create user:
 ```sql
@@ -87,17 +94,17 @@ CREATE TABLE IF NOT EXISTS trips (
 );
 ```
 
-2. Run main.go using the following command
+4. Run main.go using the following command
 ```sh
 go run main.go
 ```
 
-3. Run console.go using the following command
+5. Run console.go using the following command
 ```sh
-go run main.go
+go run console.go
 ```
 
-4. Now you will be able to access the console application.
+6. Now you will be able to use the application.
 
 ## Prerequisites
 
@@ -110,11 +117,7 @@ go run main.go
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
-Use this space to show useful examples of how a project can be used. 
-
-
-
+The usage can be found in the video link below:
 
 
 ## Contributing
@@ -122,5 +125,6 @@ Use this space to show useful examples of how a project can be used.
 Sole contributor: Zacharia Aslam
 
 ## License
+Github student account
+Visual studio code
 
-[MIT](https://choosealicense.com/licenses/mit/)
