@@ -28,13 +28,15 @@ Users can retrieve all trips that have taken before in reverse chronological ord
   
 * **Error Handling and Resilience:** Implement proper error-handling mechanisms in each microservice. Use Circuit Breaker patterns to handle faults gracefully and prevent cascading failures. Implement retries for transient failures and timeouts so that code will still be able to function even though a functionality cannot be used.
   
-* **Validations for various functions:** I have added validations such as booking and cancelling the trip only can be done 30 minutes after the trip has been created. If trip has started, users will not be able to start the trip again. Also, 
+* **Validations for various functions:** I have added validations such as booking and cancelling the trip only can be done 30 minutes after the trip has been created. If trip has started, users will not be able to start the trip again. Also, i ensured that users can only delete their created user after 1 year based on the requirements. In addition, i made sure that the user ID of created users cannot be replicated and when users try to create trips, a valid user ID must be used, thus the program will check for whether the user is a car owner before creating the trip.
 
 
 ## Architectural Diagram 📐
-![Architectural_DiagramNEW](https://github.com/Zachisastudent/ETI_Assignment-1/assets/92633277/fd38a1b3-9851-4ffa-8f56-87c15376cc51)
+![newArchiDiagram](https://github.com/Zachisastudent/ETI_Assignment-1/assets/92633277/ecc5a025-7cff-4e0e-a466-24e28b371298)
 
-Explaination: This diagram showcases
+
+Explaination: This diagram showcases my microservice carpooling application which contains 2 programs, one program is for my server side program (main.go) which help to connect the program to the datbase and use REST API to communicate with the server to allow for GET, POST and PUT methods for various functionalities. The other program (console.go) is my client side program which acts as as "Admin console" to allow users to interact with the program and allow to handle user inputs based on the functionalities in main.go. The program will begin with the execution of main.go which will send its packets over to the client, once received its call, the client side program will be able to call the server side program main.go to allow the REST endpoints to be activated.
+
 <!-- GETTING STARTED -->
 ## Getting Started 
 *  **Note: You can use whatever way to initalise your repository AS LONG AS you have server and client program each. Naming conventions such as main.go and console.go is up to you. (I named mine as mainsub.go and consolesub.go)**
