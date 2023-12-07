@@ -35,7 +35,10 @@ Users can retrieve all trips that have taken before in reverse chronological ord
 Explaination: This diagram showcases
 <!-- GETTING STARTED -->
 ## Getting Started 
-*Note: You can use whatever way to initalise your repository AS LONG AS you have server and client program each. Naming conventions such as main.go and console.go is up to you. (I named mine as mainsub.go and consolesub.go)
+*  **Note: You can use whatever way to initalise your repository AS LONG AS you have server and client program each. Naming conventions such as main.go and console.go is up to you. (I named mine as mainsub.go and consolesub.go)**
+* **Also, my codes uses a map as stroage as the implementation of database has issue**
+
+* <br>
 
 1. Create 2 speperate folders to contain your server program (main.go) and Admin console program (console.go)
   
