@@ -27,6 +27,8 @@ Users can retrieve all trips that have taken before in reverse chronological ord
 * **Event Sourcing and Logging:** Consider implementing event sourcing for tracking changes in state. Implement logging for each microservice to capture important events and errors. 
   
 * **Error Handling and Resilience:** Implement proper error-handling mechanisms in each microservice. Use Circuit Breaker patterns to handle faults gracefully and prevent cascading failures. Implement retries for transient failures and timeouts so that code will still be able to function even though a functionality cannot be used.
+  
+* **Validations for various functions:** I have added validations such as booking and cancelling the trip only can be done 30 minutes after the trip has been created. If trip has started, users will not be able to start the trip again. Also, 
 
 
 ## Architectural Diagram 📐
@@ -122,6 +124,7 @@ go run console.go
 ## Usage
 The usage can be found in the video link below:
 
+Do take note that installing mysql is not necessary for this project as i did not use a database to store user and trip information. I used a map instead  that acts as a session state. Once main.go ends the program, all data will be deleted!!!
 
 ## Contributing
 
