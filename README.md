@@ -14,7 +14,7 @@ Users can retrieve all trips that have taken before in reverse chronological ord
 
 2. Conscientious Consideration in Designing Microservices: Develop microservices with careful consideration, adhering to best practices in design and architecture.
 
-## Design considerations
+## Design considerations🎨
 
 * For my design considerations,  after reading through the requirements, I had to implement a **2 tiered microservice** architecture with implementation of a persistant storage. I identified key entities and business capabilities in the system that I have created, such as Users and Trips. I have created 2 separate microservices for each entity or business capability to achieve a modular and scalable architecture.
   
@@ -38,7 +38,7 @@ Users can retrieve all trips that have taken before in reverse chronological ord
 Explaination: This diagram showcases my microservice carpooling application which contains 2 programs, one program is for my server side program (main.go) which help to connect the program to the datbase and use REST API to communicate with the server to allow for GET, POST and PUT methods for various functionalities. The other program (console.go) is my client side program which acts as as "Admin console" to allow users to interact with the program and allow to handle user inputs based on the functionalities in main.go. The program will begin with the execution of main.go which will send its packets over to the client, once received its call, the client side program will be able to call the server side program main.go to allow the REST endpoints to be activated.
 
 <!-- GETTING STARTED -->
-## Getting Started 
+## Getting Started ✏️
 *  **Note: You can use whatever way to initalise your repository AS LONG AS you have server and client program each. Naming conventions such as main.go and console.go is up to you. (I named mine as mainsub.go and consolesub.go)**
 * **Also, my codes uses a map as stroage as the implementation of database has issue**
 
