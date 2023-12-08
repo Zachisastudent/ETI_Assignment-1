@@ -125,6 +125,7 @@ go run console.go
 <!-- USAGE EXAMPLES -->
 ## Usage
 The usage can be found in the video link below:
+https://connectnpedu.sharepoint.com/:v:/s/DUXAssignment1videodemo/EcG0GWzpM1VDkg8uDkRISZUBN2lmZut6BJx9dj1ics013A?e=BuLYhJ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 Do take note that installing mysql is not necessary for this project as i did not use a database to store user and trip information. I used a map instead  that acts as a session state. Once main.go ends the program, all data will be deleted!!!
 
